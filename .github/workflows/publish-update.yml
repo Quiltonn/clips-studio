@@ -1,0 +1,37 @@
+# Публикация обновления Clips Studio из ветки claude/release-*:
+#  - коммит с «[draft]»   → выпуск создаётся черновиком (программы друзей его не видят)
+#  - коммит с «[publish]» → черновик публикуется и становится последней версией
+name: Publish update
+on:
+  push:
+    branches: ["claude/release-*"]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MSG: ${{ github.event.head_commit.message }}
+        run: |
+          set -euo pipefail
+          M=update/manifest.json
+          V=$(jq -r .version $M); TAG="v$V"; PATCH="update/$(jq -r .patch.file $M)"
+          echo "$(jq -r .patch.sha256 $M)  $PATCH" | sha256sum -c -
+          test "$(jq -r .patch.url $M)" = "https://github.com/$GITHUB_REPOSITORY/releases/download/$TAG/$(basename $PATCH)"
+          if gh release view "$TAG" --json isDraft -q .isDraft >/tmp/draft 2>/dev/null; then
+            if [ "$(cat /tmp/draft)" != "true" ]; then echo "Версия $V уже опубликована"; exit 0; fi
+            gh release upload "$TAG" "$PATCH" "$M" --clobber
+            gh release edit "$TAG" --notes-file update/notes.md
+          else
+            gh release create "$TAG" --draft --title "Clips Studio $V" --notes-file update/notes.md --target "$GITHUB_SHA" "$PATCH" "$M"
+          fi
+          if [[ "$MSG" == *"[publish]"* ]]; then
+            gh release edit "$TAG" --draft=false --latest
+            echo "Опубликовано: $TAG"
+          else
+            echo "Черновик готов: $TAG"
+          fi
