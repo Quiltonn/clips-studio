@@ -1,8 +1,21 @@
 {
-  "version": "3.8.1",
+  "version": "3.8.2",
   "runtime": "c8b352413fb7ab5c",
   "date": "2026-11-04",
   "changelog": [
+    {
+      "version": "3.8.2",
+      "date": "2026-11-04",
+      "changes": {
+        "Улучшения": [
+          "Варианты удаления открываются во вложенном меню справа от пункта «Удалить»",
+          "Повторная нарезка стартует быстрее: загруженная модель Whisper остаётся в памяти"
+        ],
+        "Исправления": [
+          "Нарезка больше не зависает на «Запуск распознавания речи Whisper»: если видеокарта не подходит, программа сразу работает на процессоре и не повторяет зависающую попытку CUDA"
+        ]
+      }
+    },
     {
       "version": "3.8.1",
       "date": "2026-11-04",
@@ -135,10 +148,10 @@
     }
   ],
   "patch": {
-    "file": "ClipsStudio-3.8.1-patch.zip",
-    "size": 273581,
-    "sha256": "76e338e330e049d167463b34b22965f30f13bf78af80e443265db4a4d126f673",
-    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v3.8.1/ClipsStudio-3.8.1-patch.zip"
+    "file": "ClipsStudio-3.8.2-patch.zip",
+    "size": 274644,
+    "sha256": "d4ad201d91518e02cd3d2b3063907930e27704f33059b95888e6aac6a86a61d4",
+    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v3.8.2/ClipsStudio-3.8.2-patch.zip"
   },
   "full": {
     "file": "ClipsStudio-3.6-full.zip",
