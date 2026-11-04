@@ -1,8 +1,17 @@
 {
-  "version": "3.9.1",
+  "version": "3.9.2",
   "runtime": "c8b352413fb7ab5c",
   "date": "2026-11-04",
   "changelog": [
+    {
+      "version": "3.9.2",
+      "date": "2026-11-04",
+      "changes": {
+        "Исправления": [
+          "Снова работает проверка обновлений: в версиях 3.9 и 3.9.1 она писала «Сервер обновлений не настроен в этой сборке»"
+        ]
+      }
+    },
     {
       "version": "3.9.1",
       "date": "2026-11-04",
@@ -184,10 +193,10 @@
     }
   ],
   "patch": {
-    "file": "ClipsStudio-3.9.1-patch.zip",
-    "size": 281946,
-    "sha256": "bec221c6d03cf4c7ec002c746353049ed4e2e9d9d3536ac3f2d0afd93a3e1988",
-    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v3.9.1/ClipsStudio-3.9.1-patch.zip"
+    "file": "ClipsStudio-3.9.2-patch.zip",
+    "size": 282474,
+    "sha256": "abd077aa959ff84091c19383192264505317e97be0ecaeb19e0a544ee2267527",
+    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v3.9.2/ClipsStudio-3.9.2-patch.zip"
   },
   "full": {
     "file": "ClipsStudio-3.6-full.zip",
