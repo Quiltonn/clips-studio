@@ -1,8 +1,17 @@
 {
-  "version": "3.9.3",
+  "version": "3.9.4",
   "runtime": "c8b352413fb7ab5c",
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "changelog": [
+    {
+      "version": "3.9.4",
+      "date": "2026-11-05",
+      "changes": {
+        "Улучшения": [
+          "На плитке клипа вернулась кнопка «⋮» — открывает меню клипа; правый клик тоже работает"
+        ]
+      }
+    },
     {
       "version": "3.9.3",
       "date": "2026-11-04",
@@ -206,10 +215,10 @@
     }
   ],
   "patch": {
-    "file": "ClipsStudio-3.9.3-patch.zip",
-    "size": 283050,
-    "sha256": "b58c35ddfe94add71afdd61ae76a56b0e67b4cfdc14b756cf395aa91d623fc45",
-    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v3.9.3/ClipsStudio-3.9.3-patch.zip"
+    "file": "ClipsStudio-3.9.4-patch.zip",
+    "size": 283267,
+    "sha256": "f537fc076d27b75db86cac601850b411d2d5df449f30320d153c6fd7f5fd8a1c",
+    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v3.9.4/ClipsStudio-3.9.4-patch.zip"
   },
   "full": {
     "file": "ClipsStudio-3.6-full.zip",
