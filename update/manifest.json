@@ -1,8 +1,21 @@
 {
-  "version": "3.9.2",
+  "version": "3.9.3",
   "runtime": "c8b352413fb7ab5c",
   "date": "2026-11-04",
   "changelog": [
+    {
+      "version": "3.9.3",
+      "date": "2026-11-04",
+      "changes": {
+        "Улучшения": [
+          "Контекстное меню клипа стало чуть компактнее",
+          "Кнопки «Запустить нарезку» и настроек стали немного меньше — блок прогресса больше не наезжает на них"
+        ],
+        "Исправления": [
+          "Меню по правому клику открывается рядом с курсором на любом клипе галереи, в том числе снизу и справа, при масштабе Windows 125–150% и на нескольких мониторах"
+        ]
+      }
+    },
     {
       "version": "3.9.2",
       "date": "2026-11-04",
@@ -193,10 +206,10 @@
     }
   ],
   "patch": {
-    "file": "ClipsStudio-3.9.2-patch.zip",
-    "size": 282474,
-    "sha256": "abd077aa959ff84091c19383192264505317e97be0ecaeb19e0a544ee2267527",
-    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v3.9.2/ClipsStudio-3.9.2-patch.zip"
+    "file": "ClipsStudio-3.9.3-patch.zip",
+    "size": 283050,
+    "sha256": "b58c35ddfe94add71afdd61ae76a56b0e67b4cfdc14b756cf395aa91d623fc45",
+    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v3.9.3/ClipsStudio-3.9.3-patch.zip"
   },
   "full": {
     "file": "ClipsStudio-3.6-full.zip",
