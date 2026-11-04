@@ -24,7 +24,9 @@ jobs:
           test "$(jq -r .patch.url $M)" = "https://github.com/$GITHUB_REPOSITORY/releases/download/$TAG/$(basename $PATCH)"
           if gh release view "$TAG" --json isDraft -q .isDraft >/tmp/draft 2>/dev/null; then
             if [ "$(cat /tmp/draft)" != "true" ]; then echo "Версия $V уже опубликована"; exit 0; fi
-            gh release upload "$TAG" "$PATCH" "$M" --clobber
+            if [[ "$MSG" != *"[publish]"* ]]; then  # при публикации файлы уже загружены черновиком
+              gh release upload "$TAG" "$PATCH" "$M" --clobber
+            fi
             gh release edit "$TAG" --notes-file update/notes.md
           else
             gh release create "$TAG" --draft --title "Clips Studio $V" --notes-file update/notes.md --target "$GITHUB_SHA" "$PATCH" "$M"
