@@ -1,8 +1,18 @@
 {
-  "version": "4.1",
+  "version": "4.2",
   "runtime": "8851f32bbcec85ba",
   "date": "2026-11-07",
   "changelog": [
+    {
+      "version": "4.2",
+      "date": "2026-11-07",
+      "changes": {
+        "Улучшения": [
+          "Прокрутка колёсиком стала спокойнее: 44 пикселя за щелчок вместо 72",
+          "Небольшая чистка кода: убраны неиспользуемые части, объединены повторяющиеся"
+        ]
+      }
+    },
     {
       "version": "4.1",
       "date": "2026-11-07",
@@ -250,10 +260,10 @@
     }
   ],
   "patch": {
-    "file": "ClipsStudio-4.1-patch.zip",
-    "size": 303276,
-    "sha256": "0818be0fddb6cfea3f5a5315b8b0294a97144e6f13d55e66bac72cd070c19dff",
-    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v4.1/ClipsStudio-4.1-patch.zip"
+    "file": "ClipsStudio-4.2-patch.zip",
+    "size": 303240,
+    "sha256": "1efe8a756dfb1de6deb92eb0fb470504e2610b369a5958c86b885135f9204ac9",
+    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v4.2/ClipsStudio-4.2-patch.zip"
   },
   "full": {
     "file": "ClipsStudio-4.0-full.zip",
