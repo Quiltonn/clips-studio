@@ -1,8 +1,17 @@
 {
-  "version": "5.0",
+  "version": "5.0.1",
   "runtime": "8851f32bbcec85ba",
   "date": "2026-11-08",
   "changelog": [
+    {
+      "version": "5.0.1",
+      "date": "2026-11-08",
+      "changes": {
+        "Исправления": [
+          "У вкладок «Нарезки» и «CS2» полностью свои «Параметры видео»: модель Whisper, число клипов, время клипа и все настройки субтитров больше не переносятся между режимами"
+        ]
+      }
+    },
     {
       "version": "5.0",
       "date": "2026-11-08",
@@ -275,10 +284,10 @@
     }
   ],
   "patch": {
-    "file": "ClipsStudio-5.0-patch.zip",
-    "size": 309712,
-    "sha256": "3f5c3775fbbb0d88dd2e66718000b09b3b9921b158c0267641aef00e0d35b324",
-    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v5.0/ClipsStudio-5.0-patch.zip"
+    "file": "ClipsStudio-5.0.1-patch.zip",
+    "size": 310298,
+    "sha256": "ce3712f8d710a71059f80e9ca826eb30b5c2b3158d8c596436299436ee695e9a",
+    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v5.0.1/ClipsStudio-5.0.1-patch.zip"
   },
   "full": {
     "file": "ClipsStudio-4.0-full.zip",
