@@ -249,3 +249,8 @@ Apache License
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
+gigaam/ — GigaAM-v3 e2e_rnnt (ai-sage/GigaAM-v3, © GigaChat Team / SaluteDevices), распознавание русской речи.
+License: MIT. https://github.com/salute-developers/GigaAM  •  https://huggingface.co/ai-sage/GigaAM-v3
+INT8-кодер, декодер, joint и словарь — из релиза models-v3-2026-10-09 проекта gigastt (MIT, © 2026 Evgeny Khodzitsky),
+https://github.com/ekhodzitsky/gigastt. Кодер хранится частями (.part0…), склеивается при сборке.
