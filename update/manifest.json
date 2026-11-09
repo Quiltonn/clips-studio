@@ -1,8 +1,19 @@
 {
-  "version": "5.3",
+  "version": "5.4",
   "runtime": "61854f244e5af47b",
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "changelog": [
+    {
+      "version": "5.4",
+      "date": "2026-11-10",
+      "changes": {
+        "Новое": [
+          "На плитке выложенного клипа появляется значок платформы (YouTube, TikTok). При наведении на значок видно, на какие аккаунты клип выложен — если выложить его ещё на один аккаунт, он добавится в подсказку",
+          "Баннер теперь можно увеличить или уменьшить в окне «Положение»: потяните за жёлтую рамку (край или угол). «По умолчанию» возвращает стандартные место и размер",
+          "Размер баннера учитывается и при рендере, и в «Редактировании видео»; все настройки баннеров общие для «Нарезок» и «CS2»"
+        ]
+      }
+    },
     {
       "version": "5.3",
       "date": "2026-11-09",
@@ -318,10 +329,10 @@
     }
   ],
   "patch": {
-    "file": "ClipsStudio-5.3-patch.zip",
-    "size": 328160,
-    "sha256": "ccbaa3ed4cc2508d2dbf59ae159ea410e829224b1a2a892770df6cd67e5a989c",
-    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v5.3/ClipsStudio-5.3-patch.zip"
+    "file": "ClipsStudio-5.4-patch.zip",
+    "size": 330890,
+    "sha256": "e2a617d4128ee881f6316fd0e6adce4ec24c6223c145d006288164e258c633ec",
+    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v5.4/ClipsStudio-5.4-patch.zip"
   },
   "full": {
     "file": "ClipsStudio-5.2-full.zip",
