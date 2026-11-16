@@ -1,8 +1,18 @@
 {
-  "version": "5.4",
+  "version": "5.5",
   "runtime": "61854f244e5af47b",
-  "date": "2026-11-10",
+  "date": "2026-11-17",
   "changelog": [
+    {
+      "version": "5.5",
+      "date": "2026-11-17",
+      "changes": {
+        "Новое": [
+          "В «Время клипа» появился ползунок максимальной длительности: от 10 секунд до 5 минут, по умолчанию 1 минута. У «Нарезок» и «CS2» он свой",
+          "Нейросеть выбирает моменты в заданных пределах, а если клип всё же вышел длиннее — он обрезается по концу последней фразы, которая успевает до предела"
+        ]
+      }
+    },
     {
       "version": "5.4",
       "date": "2026-11-10",
@@ -329,10 +339,10 @@
     }
   ],
   "patch": {
-    "file": "ClipsStudio-5.4-patch.zip",
-    "size": 330890,
-    "sha256": "e2a617d4128ee881f6316fd0e6adce4ec24c6223c145d006288164e258c633ec",
-    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v5.4/ClipsStudio-5.4-patch.zip"
+    "file": "ClipsStudio-5.5-patch.zip",
+    "size": 331732,
+    "sha256": "07ed3cb737644239ece9611b496da2deb5baf68b2167d133c4cf40ac8f810d2f",
+    "url": "https://github.com/Quiltonn/clips-studio/releases/download/v5.5/ClipsStudio-5.5-patch.zip"
   },
   "full": {
     "file": "ClipsStudio-5.2-full.zip",
